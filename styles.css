@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arapey';
+    font-weight: lighter;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+header div{
+        padding: 25px;
+        padding-top: 15px;
+}
+header h1{
+    margin-left: 0px;
+    padding-top: 15px;
+    font-size: 60px;
+}
+header form{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+form input[type='text']{
+    width: 500px;
+    height: 45px;
+    border-radius: 1.625 rem;
+    font-size: 1.2rem;
+    padding-left: 20px;
+    flex-grow: 1;
+}
+header form button[type='submit']{
+    height: 45px;
+    width: 100px;
+    margin-left: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: rgb(36, 36, 36);
+    color: aliceblue;
+    border-radius: 5%;
+    transition: background-color 0.2s ease-in-out;
+}
+form button[type='submit']:hover{
+    background-color: rgb(84, 84, 84);
+}
+@media screen and (max-width: 600px){
+    header{
+        flex-direction: column;
+    }
+    header h1{
+        text-align: center;
+    }
+    header form{
+        justify-content: center;
+        width: 80%;
+    }
+}
+main{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 35px;
+    text-align: center;
+}
+.recipeContainer{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.recipe{
+    margin: 10px;
+    width:fit-content;
+    max-width: 303px;
+    height:fit-content;
+    padding-bottom: 20px;
+    border: solid;
+    border-width: 0.5px;
+    border-radius: 3%;
+}
+.recipe h3{
+    font-style: bold;
+    font-size: 2rem;
+    padding-bottom: 3px;
+}
+.overview{
+    padding-top: 20px;
+}
+.recipe img{
+    padding: 0;
+    margin: 0;
+    width: 300px;
+    height: 280px;
+    border-radius: 3%;
+}
+.overview p{
+    font-size: 1.1rem;
+}
+.recipe button{
+    margin-top: 11px;
+    padding: 8px;
+    font-size: 1rem;
+    background-color:rgb(36, 36, 36);
+    color: aliceblue;
+    border-radius: 8%;
+    transition: background-color 0.2s ease-in-out;
+}
+.recipe button:hover{
+    background-color:rgb(84, 84, 84);
+}
