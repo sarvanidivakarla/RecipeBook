@@ -72,6 +72,57 @@ main{
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+.recipeDetails{
+    display: none;
+    position: fixed;
+    max-height: 650px;
+    width: 680px;
+    padding: 25px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 3%;
+    background-color:aliceblue;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+    box-shadow: 2px 2px 5px rgb(84, 84, 84);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+/*Adding scrollbar*/
+.recipeDetails::-webkit-scrollbar{
+    width: 10px;
+}
+.recipeDetails::-webkit-scrollbar-thumb{
+    background-color: #b5b5ba;
+    border-radius: 16px;
+    --webkit-border-radius: 16px;
+}
+.recipeDetails ul{
+    list-style-type: none;
+    text-align: left;
+    padding-top: 8px;
+}
+.recipeDetails h3{
+    padding: 8px;
+}
+.recipeCloseBtn, .videoBtn{
+    padding: 3px;
+    background-color:rgb(36, 36, 36);
+    color:aliceblue;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 10%;
+    cursor: pointer;
+    width: 50px;
+}
+.videoBtn{
+    width: 100px;
+    margin-top: 8px;
+}
+.recipeCloseBtn:hover, .videoBtn:hover{
+    background-color:rgb(84, 84, 84);
+}
 .recipe{
     margin: 10px;
     width:fit-content;
@@ -81,6 +132,11 @@ main{
     border: solid;
     border-width: 0.5px;
     border-radius: 3%;
+    transition: all 0.5s ease-in-out;
+}
+.recipe:hover{
+    transform: scale(1.065);
+    box-shadow: 2px 2px 5px rgb(84, 84, 84);
 }
 .recipe h3{
     font-style: bold;
