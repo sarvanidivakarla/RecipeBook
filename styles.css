@@ -75,13 +75,8 @@ main{
 .recipeDetails{
     display: none;
     position: fixed;
-<<<<<<< HEAD
     max-height: 650px;
     width: 680px;
-=======
-    height: fit-content;
-    width:fit-content;
->>>>>>> c1f76b6f62ad2a26b364317b363024d8031ad3c7
     padding: 25px;
     border: solid;
     border-width: 1px;
@@ -92,7 +87,6 @@ main{
     transform: translate(-50%, -50%);
     transition: all 0.5s ease-in-out;
     box-shadow: 2px 2px 5px rgb(84, 84, 84);
-<<<<<<< HEAD
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -104,9 +98,6 @@ main{
     background-color: #b5b5ba;
     border-radius: 16px;
     --webkit-border-radius: 16px;
-=======
-
->>>>>>> c1f76b6f62ad2a26b364317b363024d8031ad3c7
 }
 .recipeDetails ul{
     list-style-type: none;
@@ -116,16 +107,11 @@ main{
 .recipeDetails h3{
     padding: 8px;
 }
-<<<<<<< HEAD
 .recipeCloseBtn, .videoBtn{
-=======
-.recipeCloseBtn{
->>>>>>> c1f76b6f62ad2a26b364317b363024d8031ad3c7
     padding: 3px;
     background-color:rgb(36, 36, 36);
     color:aliceblue;
     transition: background-color 0.2s ease-in-out;
-<<<<<<< HEAD
     border-radius: 10%;
     cursor: pointer;
     width: 50px;
@@ -135,11 +121,6 @@ main{
     margin-top: 8px;
 }
 .recipeCloseBtn:hover, .videoBtn:hover{
-=======
-    border-radius: 5%;
-}
-.recipeCloseBtn:hover{
->>>>>>> c1f76b6f62ad2a26b364317b363024d8031ad3c7
     background-color:rgb(84, 84, 84);
 }
 .recipe{

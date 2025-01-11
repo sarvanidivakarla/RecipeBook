@@ -1,17 +1,9 @@
-<<<<<<< HEAD
 //Declaring variables for responsiveness
 const searchBox = document.querySelector('.searchBox');  //Search Box
 const searchBtn = document.querySelector('.searchBtn');  //Search Button
 const recipeContainer = document.querySelector('.recipeContainer');  //Recipe Container for overview of recipe
 const recipeDetailsContent = document.querySelector('.recipeDetailsContent');  //Recipe details [Ingredients+Instructions]
 const recipeCloseBtn = document.querySelector('.recipeCloseBtn');  //Close button
-=======
-const searchBox = document.querySelector('.searchBox');
-const searchBtn = document.querySelector('.searchBtn');
-const recipeContainer = document.querySelector('.recipeContainer');
-const recipeDetailsContent = document.querySelector('.recipeDetailsContent');
-const recipeCloseBtn = document.querySelector('.recipeCloseBtn');
->>>>>>> c1f76b6f62ad2a26b364317b363024d8031ad3c7
 
 //Function to get recipes
 const fetchRecipes = async (query) =>{  //Async function: 
@@ -76,14 +68,11 @@ const openRecipePopUp = (meal) =>{
             <h3>Instructions</h3>
             <p>${meal.strInstructions}</p>
         </div>
-<<<<<<< HEAD
         <div>
             <a href="${meal.strYoutube}" target="_blank">
                 <button type="button" class="videoBtn">Click here for video recipe</button>
             </a>
         </div>
-=======
->>>>>>> c1f76b6f62ad2a26b364317b363024d8031ad3c7
     `
 
     recipeDetailsContent.parentElement.style.display = "block"; 
