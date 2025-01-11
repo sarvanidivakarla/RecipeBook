@@ -38,7 +38,7 @@ const fetchRecipes = async (query) =>{  //Async function:
 
         
     });
-    if(recipeContainer.innerHTML==""){
+    if(!recipeContainer.hasChildNodes()){
         recipeContainer.innerHTML="<h2>No recipes Found</h2>";
     }
 }
